@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#packages">Our Package</a></li>
+            <li><a href="#contact">Call Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <section id="home" class="header">
+        <h1>Your Trusted Travel Agent's</h1>
+        <h2>Your happiness is our happiness</h2>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content">
+        <div class="left-field">
+            <img src="your-image.jpg" alt="Travel Image" class="travel-image">
+            <p>Liburan jadi menyenangkan bersama Travel Agentku</p>
+        </div>
+        <div class="right-field">
+            <h3>Contact Us</h3>
+            <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+            <form id="contact-form" onsubmit="return validateForm()">
+                <label for="name">Your name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="interest">What are you interested in?</label>
+                <input type="text" id="interest" name="interest" required>
+
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Our Package Section -->
+    <section id="packages" class="packages">
+        <h2>Our Package</h2>
+        <div class="destination-list">
+            <div class="row">
+                <div class="destination">Bali</div>
+                <div class="destination">Japan</div>
+                <div class="destination">Singapore</div>
+            </div>
+            <div class="row">
+                <div class="destination">Bandung</div>
+                <div class="destination">Surabaya</div>
+                <div class="destination">Jakarta</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>

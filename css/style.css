@@ -1,0 +1,128 @@
+/* Navigation styling */
+.navbar {
+    background-color: #333;
+    text-align: right;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a:hover {
+    color: yellow;
+}
+
+/* Header Section styling */
+.header {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.header h1 {
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+}
+
+.header h2 {
+    font-size: 1.5em;
+    color: gray;
+}
+
+/* Content Section styling */
+.content {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+.content .left-field {
+    flex: 1;
+    text-align: center;
+}
+
+.content .left-field .travel-image {
+    max-width: 100%;
+}
+
+.content .right-field {
+    flex: 1;
+    padding: 20px;
+}
+
+.content .right-field h3 {
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.content .right-field form {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .right-field form label {
+    margin-bottom: 5px;
+}
+
+.content .right-field form input {
+    margin-bottom: 10px;
+}
+
+.content .right-field form button {
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+}
+
+/* Our Package Section styling */
+.packages {
+    text-align: center;
+    padding: 40px;
+}
+
+.packages h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+}
+
+.destination-list {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+.destination-list .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.destination-list .row .destination {
+    flex: 1;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .destination-list .row {
+        flex-direction: column;
+    }
+}
